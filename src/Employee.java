@@ -1,10 +1,12 @@
+import java.util.Date;
+
 public class Employee {
     private String nome;
-    private String data_de_admissao;
-    private String salario_base;
-    private String salario_bruto; 
-    private String salario;
-    private String liquido;
+    private Date data_de_admissao;
+    private Double salario_base;
+    private Double salario_bruto; 
+    private Double salario;
+    private Double liquido;
     
     public String getNome() {
         return nome;
@@ -12,35 +14,35 @@ public class Employee {
     public void setNome(String nome) {
         this.nome = nome;
     }
-    public String getData_de_admissao() {
+    public Date getData_de_admissao() {
         return data_de_admissao;
     }
-    public void setData_de_admissao(String data_de_admissao) {
+    public void setData_de_admissao(Date data_de_admissao) {
         this.data_de_admissao = data_de_admissao;
     }
-    public String getSalario_base() {
+    public Double getSalario_base() {
         return salario_base;
     }
-    public void setSalario_base(String salario_base) {
+    public void setSalario_base(Double salario_base) {
         this.salario_base = salario_base;
     }
-    public String getSalario_bruto() {
+    public Double getSalario_bruto() {
         return salario_bruto;
     }
-    public void setSalario_bruto(String salario_bruto) {
+    public void setSalario_bruto(Double salario_bruto) {
         this.salario_bruto = salario_bruto;
     }
-    public String getSalario() {
+    public Double getSalario() {
         return salario;
     }
-    public void setSalario(String salario) {
+    public void setSalario(Double salario) {
         this.salario = salario;
     }
-    public String getLiquido() {
+    public Double getLiquido() {
         return liquido;
     }
-    public void setLiquido(String liquido) {
+    public void setLiquido(Double liquido) {
         this.liquido = liquido;
     }
-
+    
 }

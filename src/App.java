@@ -1,5 +1,10 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+       try {
+        
+       } catch (Exception e) {
+        // TODO: handle exception
+        System.out.println("Erro: " + e.getMessage());
+       }
     }
 }
