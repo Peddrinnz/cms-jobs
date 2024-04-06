@@ -3,11 +3,24 @@ import java.util.Date;
 public class Employee {
     private String nome;
     private Date data_de_admissao;
-    private Double salario_base;
-    private Double salario_bruto; 
-    private Double salario;
-    private Double liquido;
-    
+    private double salario_base;
+    private double salario_bruto; 
+    private double salario;
+    private double liquido;
+
+    protected final double salarioBaseProgramador = 3000;
+    protected final double salarioBaseDiretor = 9000;
+    protected final double salarioBaseAnalista = 9000;
+
+    public Employee(String nome, Date data_de_admissao, double salario_base, double salario_bruto, double liquido){
+        this.nome = nome;
+        this.data_de_admissao = data_de_admissao;
+        this.salario_base = salario_base;
+        this.salario_bruto = 0;
+        this.liquido = 0;
+    }
+   
+
     public String getNome() {
         return nome;
     }
@@ -45,4 +58,7 @@ public class Employee {
         this.liquido = liquido;
     }
     
+    public void calcularRemuneracao( Double salarioBase, Double salarioBruto, Double salarioLiquido){
+        
+    }
 }
